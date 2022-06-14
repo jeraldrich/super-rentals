@@ -15,7 +15,7 @@ module('Integration | Component | map', function (hooks) {
       @width="150"
       @height="120"
     />`);
-  
+
     assert
       .dom('.map img')
       .exists()
@@ -23,7 +23,7 @@ module('Integration | Component | map', function (hooks) {
       .hasAttribute('src')
       .hasAttribute('width', '150')
       .hasAttribute('height', '120');
-  
+
     let { src } = find('.map img');
     let token = encodeURIComponent(ENV.MAPBOX_ACCESS_TOKEN);
 
