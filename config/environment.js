@@ -47,5 +47,8 @@ module.exports = function (environment) {
     // here you can enable a production-specific feature
   }
 
+  // TODO: Move this to local_environment, create install script to copy and ignore environment to prevent keys from being pushed to repo.
+  ENV.MAPBOX_ACCESS_TOKEN = '';
+
   return ENV;
 };
