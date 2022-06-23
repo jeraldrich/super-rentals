@@ -1,6 +1,6 @@
 This repo contains the ember frontend which fetches data from the rentals api at [super-rentals](https://github.com/jeraldrich/super-rentals-api)
 
-![ScreenShot](https://github.com/jeraldrich/super-rentals/blob/master/github-screenshot.png)
+![ScreenShot](https://github.com/jeraldrich/super-rentals/blob/main/github-screenshot.png)
 
 * Setup and run the rails json api at [super-rentals-api](https://github.com/jeraldrich/super-rentals-api): `bundle exec rails s -p 5000 -b 0.0.0.0`
 * Get the auto generated api key for the api user by going to the super-rentals-api rails console: `rails c` `User.first.api_key`
