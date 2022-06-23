@@ -49,6 +49,8 @@ module.exports = function (environment) {
 
   // TODO: Move this to local_environment, create install script to copy and ignore environment to prevent keys from being pushed to repo.
   ENV.MAPBOX_ACCESS_TOKEN = '';
+  ENV.API_KEY = '';
+  ENV.API_URL = 'http://127.0.0.1:5000';
 
   return ENV;
 };

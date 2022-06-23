@@ -1,32 +1,21 @@
-# super-rentals
+This repo contains the ember frontend which fetches data from the rentals api at [super-rentals](https://github.com/jeraldrich/super-rentals-api)
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+![ScreenShot](https://github.com/jeraldrich/super-rentals/blob/master/github-screenshot.png)
 
-## Prerequisites
+* Setup and run the rails json api at [super-rentals-api](https://github.com/jeraldrich/super-rentals-api): `bundle exec rails s -p 5000 -b 0.0.0.0`
+* Get the auto generated api key for the api user by going to the super-rentals-api rails console: `rails c` `User.first.api_key`
+* Set the ENV.API_KEY in config/environment with the api user's api key
+* Signup for mapbox and set the ENV.MAPBOX_ACCESS_TOKEN with your public token
 
-You will need the following things properly installed on your computer.
+Setup and run ember frontend:
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://cli.emberjs.com/release/)
-* [Google Chrome](https://google.com/chrome/)
+```
+npm install
+ember serve
+```
 
-## Installation
-
-* `git clone <repository-url>` this repository
-* `cd super-rentals`
-* `npm install`
-
-## Running / Development
-
-* `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
 
 ### Running Tests
 
@@ -42,15 +31,3 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 * `ember build` (development)
 * `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://cli.emberjs.com/release/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
